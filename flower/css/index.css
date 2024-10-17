@@ -57,8 +57,190 @@ a img {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 400px;
+    overflow: hidden;
+}
+.first-bar div{
+    width: 30%;
 }
 .first-bar img{
     width: 500px;
+    height: 400px;
+    transform: translate(-25%, 0%);
+    
+}
+.second-bar{
+    background-color: #D9D0E3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px;
+
+}
+.second-bar img{
+    width: auto;
+    height: 400px;
+    
+}
+.second-bar div{
+    width: 30%;
+    transform: translate(-20%, 0%);
+}
+.thard-bar{
+    background-color:#C8D2DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.thard-bar img{
+    width: auto;
+    height: 400px;
+    transform: translate(-10%, 0%);
+}
+.thard-bar div{
+    width: 30%;
+}
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    overflow-x: auto;
+    padding-left: 15px;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.product_image{
+    width: 250px;
     height: auto;
+    margin: 0px 15px 0px 15px;
+}
+.product_title{
+    position: absolute; /* 絶対位置に設定 */
+    bottom: 10px; /* 画像の下部からの距離を調整 */
+    left: 50%; /* 左端からの距離を調整 */
+    transform: translateX(-50%); /* 中央揃え */
+    color: white; /* テキストの色を白に設定 */
+    padding: 5px; /* パディングを追加 */
+    border-radius: 5px; /* 角を丸くする */
+    text-align: center; /* テキストを中央揃え */
+    width: 90%; /* テキストの幅を調整 */
+    font: bold 15px Arial, sans-serif;
+}
+.product {
+    position: relative; /* 子要素の絶対位置を基準にする */
+    flex: 0 0 auto; /* 子要素が縮小されないようにする */
+}
+.bu-ke{
+    background-color: #F6F5F1;
+    height: auto;
+}
+.bu-ke_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bu-ke_name p{
+    font-weight: bold;
+}
+.bu-ke_name h2{
+    margin-top: 75px;
+}
+.bu-ke button{
+    margin: 30px ;
+    width: 327px;
+    height: 50px;
+    border-radius: 50vh;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 50px;
+
+}
+.bu-ke_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.How-to{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20% ;
+}
+.item img{
+    width: 50%;
+}
+.How-to-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.item-arrow img{
+    width: 50px;
+
+}
+.subtitle{
+    font-weight: bold;
+}
+.instagram-bar{
+    background-color: #F6F5F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.instagram-bar h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; /* 要素を折り返す */
+}
+.item-instagram img{
+    margin: 5px;
+    width: 200px;
+    height: auto;
+}
+.instagram-div{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.icon_instagram{
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+    position: absolute;
+    background-image: url(https://s3-ap-northeast-1.amazonaws.com/flower-production-assets/assets/web/home/icon_instagram-cad68eaf4f8d5dffbc6aab90c98858e52b7810fb96348eef73df926171a3648d.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+.instagram_button button{
+    margin: 30px ;
+    width: 327px;
+    height: 50px;
+    border-radius: 50vh;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 50px;
 }
