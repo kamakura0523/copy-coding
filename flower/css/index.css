@@ -1,6 +1,37 @@
+
+* {
+        margin: 0;
+        padding: 0;
+}
 .firstImg{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 850px;
+    background-image: url("../img/header_bg-c9ed7b2e572e200d27cae1b42010563170fdc48ff31e206f9e2c94712ee4773c.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-logo{
+    background-image: url("https://s3-ap-northeast-1.amazonaws.com/flower-production-assets/assets/web/home/logo-64a9e08571ea8941694f2828e0aa1253e037e5273c3cfa37a457430294c33951.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0 auto;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.25));
+    animation: fadeIn 1.75s;
+    height: 150px;
+    width: 200px;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 div.p{
@@ -11,17 +42,27 @@ div.p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
+    height: 350px;
     
 }
-.first-tag h1{
+.first-comment{
     line-height:0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: none;
+}
+.first-comment h1{
+    margin-bottom: 30px;
+    line-height: 0.3;
 }
 .first-tag p{
+    margin: 10px;
     line-height: 0.3;
 }
 .first-tag div{
-    margin: 30px;
+    margin: 10px;
 }
 .second-tag {
     display: flex;
@@ -51,6 +92,10 @@ a img {
 .innerTag{
     margin-right: 50px;
 }
+.innerTag p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 .first-bar {
     background-color: #EDDED7;
@@ -75,6 +120,7 @@ a img {
     justify-content: flex-end;
     align-items: center;
     height: 400px;
+    flex-wrap: wrap;
 
 }
 .second-bar img{
@@ -174,6 +220,9 @@ a img {
     align-items: center;
     flex-direction: column;
 }
+.How-to h2{
+    margin-top: 50px;
+}
 .item{
     display: flex;
     justify-content: center;
@@ -189,7 +238,7 @@ a img {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 10px;
+    padding: 50px;
 }
 
 .item-arrow img{
